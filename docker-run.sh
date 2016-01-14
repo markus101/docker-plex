@@ -14,9 +14,8 @@ if [ -z "$PORT" ]; then
     echo "Version is required as the second parameter"
 fi
 
-mkdir $WORKING_DIR/$VERSION
-mkdir $CONFIG
-mkdir $TRANSCODE
+mkdir -p $CONFIG
+mkdir -p $TRANSCODE
 
 docker run \
     -d \
