@@ -21,5 +21,5 @@ RUN chmod -v +x /etc/my_init.d/*.sh
 ADD plexmediaserver /defaults/plexmediaserver
 
 #Mappings and ports
-VOLUME ["/config", "/transcode"]
+VOLUME ["/config", "/transcode", "/data"]
 EXPOSE 32400
