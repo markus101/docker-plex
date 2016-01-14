@@ -2,9 +2,9 @@ VERSION=$1
 PORT=$2
 DIR_NAME=${PWD##*/}
 WORKING_DIR=${PWD}
-CONFIG = $WORKING_DIR/$VERSION/config
-TRANSCODE = $WORKING_DIR/$VERSION/trancode
-NAME = "plex-$VERSION"
+CONFIG=$WORKING_DIR/$VERSION/config
+TRANSCODE=$WORKING_DIR/$VERSION/trancode
+NAME="plex-$VERSION"
 
 if [ -z "$VERSION" ]; then
     echo "Version is required as the first parameter"
