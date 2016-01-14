@@ -17,8 +17,9 @@ fi
 mkdir $CONFIG
 mkdir $TRANSCODE
 
-docker create \
-    --name=$NAME
+docker run \
+    -d \
+    --name=$NAME \
     --publish=32400:$PORT --restart=always \
     -e VERSION=$VERSION \
     --volume=$CONFIG:/config \
