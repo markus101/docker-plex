@@ -24,4 +24,4 @@ docker run \
     -e VERSION=$VERSION \
     --volume=$CONFIG:/config \
     --volume=$TRANSCODE:/transcode \
-    $VERSION
+    $DIR_NAME
